@@ -1,0 +1,13 @@
+Portfolio:
+
+1. Create the index.html document first with all the basic content like nav bar, social icons, footer with copyright. 
+2. Then comes styling. We are using Sass for this project(mainly SCSS).
+	1. Create a folder called "scss". 
+	2. create a file in this folder called "main.scss".  
+	3. create another file called "_config.scss" which will be the partial. 
+		We are going to create partials for all of our elements. 
+		Thats what they do in larger projects. 
+	4. created a home and menu partials too.
+3. For styling the menu burger icon, we have styled one bar and used pseudo elements to create the top and bottom bars.
+
+ 

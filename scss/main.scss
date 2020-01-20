@@ -1,0 +1,78 @@
+// import the config without underscore and the extension
+@import 'config';
+
+// import home partials
+@import 'home';
+
+//import menu partials
+@import 'menu';
+
+@import 'education';
+
+@import 'experience';
+
+@import 'projects';
+
+@import 'skills';
+
+@import 'coursework';
+
+@import 'responsive';
+
+body{
+  background:black;
+  color: set-text-color($primary-color);
+  height: 100vh; //100% of the available viewport height 
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height:1; 
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color:set-text-color($primary-color);
+  text-decoration:none;
+}
+.text-secondary{
+  color:$secondary-color;
+}
+
+header{
+  position:fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem; //rem units are based on the font size of the body. font size of body is 16px. so 1 rem is 1*16px. em is based on font size of the parent not the body.  
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+  .social-icons{
+    position:fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a{
+      padding: 0.4rem;
+      @include transition-ease; //including the mixin.
+
+      &:hover{
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+footer{
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+}

@@ -1,0 +1,55 @@
+.skills{
+  &-image{
+    height: 100vh;
+    width: 100%;
+    background: 
+    linear-gradient(
+      to right,
+      rgba(black, 0.6),
+      rgba(black, 0.6)
+    ),
+  url('../img/img2.png') center top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .text-secondary{
+    padding-top: 3rem;
+    width: 75vw;
+  }
+  &-block{
+    padding-top: 0;
+    width: 60vw;
+    margin: 1rem auto 0 auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  &-item{
+    padding: 0.7rem 0.7rem 0.6rem 1.2rem; 
+    line-height: 0.7rem;
+    background: black; 
+    opacity: 1; 
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #fff;
+  }
+  
+  h2{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #fff;
+  }
+}
+
+
